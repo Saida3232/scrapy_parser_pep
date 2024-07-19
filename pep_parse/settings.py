@@ -8,7 +8,7 @@ NEWSPIDER_MODULE = 'pep_parse.spiders'
 ROBOTSTXT_OBEY = True
 
 ITEM_PIPELINES = {
-    'pep_parse.pipelines.PepParsePipeline': 300
+    'pep_parse.pipelines.PepParsePipeline': 300,
 }
 
 FEEDS = {
