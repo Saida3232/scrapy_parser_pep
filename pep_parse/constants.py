@@ -1,5 +1,3 @@
-PEP_PAGE = 'http://peps.python.org/'
-
 EXPECTED_STATUS = {
     'A': ('Active', 'Accepted'),
     'D': ('Deferred',),

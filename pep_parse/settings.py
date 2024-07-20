@@ -17,3 +17,8 @@ FEEDS = {
         'fields': ['number', 'name', 'status']
     },
 }
+
+
+ALLOWED_DOMAINS = ['peps.python.org']
+START_URLS = ['https://peps.python.org']
+PEP_SPIDER_NAME = 'pep'

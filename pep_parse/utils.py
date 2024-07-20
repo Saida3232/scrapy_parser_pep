@@ -6,15 +6,15 @@ from pep_parse.constants import (DATETIME_FORMAT, EXPECTED_STATUS,
 
 
 def status_pep(current_status):
-    for short_status, status in EXPECTED_STATUS.items():
-        if current_status in status:
+    for short_status, full_statuses in EXPECTED_STATUS.items():
+        if current_status in full_statuses:
             return short_status
 
 
 def add_count(results):
     statuses = [('Статус', "Количество")]
-    for i in EXPECTED_STATUS.keys():
-        statuses.append((i, results.count(i)))
+    for short_name_status in EXPECTED_STATUS:
+        statuses.append((short_name_status, results.count(short_name_status)))
     statuses.append(('Total', len(results)))
     return statuses
 
